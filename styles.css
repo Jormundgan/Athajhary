@@ -55,10 +55,11 @@ h1 {
 .slogan {
     font-style: italic;
     margin-top: 0;
+    width: 100%;
 }
 
 #main1 {
-    height: 100%;
+    height: auto;
     padding: 20px;
     background-image: url('fondos/fondo3.jpeg'); /* <--- RUTA A TU IMAGEN */
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
@@ -326,4 +327,5 @@ nav a:hover {
     background-repeat: no-repeat; 
 
 }
+
 
