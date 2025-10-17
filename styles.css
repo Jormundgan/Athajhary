@@ -58,7 +58,7 @@ h1 {
 }
 
 #main1 {
-    height: 760px;
+    height: 100%;
     padding: 20px;
     background-image: url('fondos/fondo3.jpeg'); /* <--- RUTA A TU IMAGEN */
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
@@ -194,7 +194,7 @@ p {
     color: #01417c; /* Tono de verde medio */
     padding-bottom: 10px;
     margin-bottom: 20px;
-    width: 500px;
+    width: 100%px;
 }
 
 p2 {
@@ -326,3 +326,4 @@ nav a:hover {
     background-repeat: no-repeat; 
 
 }
+
