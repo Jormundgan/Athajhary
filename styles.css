@@ -89,6 +89,7 @@ h2 {
     justify-content: center; /* Centra los elementos horizontalmente */
     gap: 20px; /* Espaciado entre los elementos */
     max-width: 100%; /* Asegúrate de que no exceda el ancho del contenedor */
+    max-heigth: 100%;
     padding: 10px; /* Espaciado interno */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
@@ -327,6 +328,7 @@ nav a:hover {
     background-repeat: no-repeat; 
 
 }
+
 
 
 
