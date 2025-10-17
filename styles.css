@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
 
 header {
     position: relative;
@@ -280,11 +284,36 @@ nav a:hover {
     .design-card {
         width: calc(50% - 20px); /* En pantallas medianas, cada tarjeta ocupará la mitad del ancho */
     }
+    .slogan {
+        font-size: 1em; /* Reduce el tamaño del texto */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño del encabezado */
+    }
 }
 
 @media (max-width: 480px) {
     .design-card {
         width: 100%; /* En pantallas pequeñas, cada tarjeta ocupará el ancho completo */
+    }
+
+    .main-logo {
+        width: 200px; /* Reduce el tamaño del logo */
+    }
+
+    .slogan {
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1em; /* Reduce el tamaño de los enlaces */
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Ajusta el tamaño del encabezado */
     }
 }
 
@@ -295,4 +324,5 @@ nav a:hover {
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
     background-position: center;        /* Centra la imagen de fondo */
     background-repeat: no-repeat; 
+
 }
