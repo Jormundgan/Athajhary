@@ -59,7 +59,7 @@ h1 {
 }
 
 #main1 {
-    height: auto;
+    height: 680px;
     padding: 20px;
     background-image: url('fondos/fondo3.jpeg'); /* <--- RUTA A TU IMAGEN */
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
@@ -328,6 +328,7 @@ nav a:hover {
     background-repeat: no-repeat; 
 
 }
+
 
 
 
