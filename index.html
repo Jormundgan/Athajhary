@@ -8,16 +8,15 @@
 </head>
 <body>
 
-     <nav>
-        <a href="#header">Inicio</a>
-        <a href="#main1">Diseños</a>
-        <a href="#main2">Contacto</a>
-    </nav>
-
-    <header id="header">
+    <header id="header">   
+            <nav>
+                <a href="#header">Inicio</a>
+                <a href="#main1">Diseños</a>
+                <a href="#main2">Contacto</a>
+           </nav>
 
         <div class="logo-container">
-            <img src="fondos/athajhary.png" alt="Logo de Athajhary con una tortuga tribal" class="main-logo">
+            <img src="fondos/athajhary.png" alt="" class="main-logo">
             <h1>ATHAJHARY</h1>
         </div>
         <p class="slogan">En Athajhary, convertimos tus ideas en productos únicos, estampando tus diseños favoritos en una gran variedad de colores y estilos 
@@ -32,23 +31,48 @@
             <div class="gallery">
 
                 <a href="jgh.html" class="design-card">
-                    <img src="fondos/jhg.png" alt="Representación del Arcángel Miguel">
+                    <img src="fondos/jhg.png" alt="">
                     <div class="card-title">JGH</div>
                 </a>
 
                  <a href="halloween.html" class="design-card">
-                    <img src="fondos/halloween.png" alt="Jack Skellington asomándose de un agujero púrpura">
+                    <img src="fondos/halloween.png" alt="">
                     <div class="card-title">Halloween</div>
                 </a>
 
                 <a href="navidad.html" class="design-card">
-                    <img src="fondos/navidad.png" alt="Stitch con traje de Santa y luces de Navidad">
+                    <img src="fondos/navidad.png" alt="">
                     <div class="card-title">Navidad</div>
                 </a> 
 
+                <a href="angeles.html" class="design-card">
+                    <img src="fondos/angeles.png" alt="">
+                    <div class="card-title">Angeles</div>
+                </a>
+
+                 <a href="mafalda.html" class="design-card">
+                    <img src="fondos/mafalda.png" alt="">
+                    <div class="card-title">Mafalda</div>
+                </a>
+
+                <a href="jesus.html" class="design-card">
+                    <img src="fondos/jesus.png" alt="">
+                    <div class="card-title">Jesus</div>
+                </a> 
+
+                <a href="navidad.html" class="design-card">
+                    <img src="fondos/animados.png" alt="">
+                    <div class="card-title">Animados</div>
+                </a>
+
+                <a href="vzla.html" class="design-card">
+                    <img src="fondos/vzla.png" alt="">
+                    <div class="card-title">Viva Venezuela</div>
+                </a>
+
             </div>
         </section>
-        <a href="files/Catalogo.pdf" download>Descargar Catálogo</a>
+        <a href="files/Catalogo.pptx" download>Descargar Catálogo</a>
     </main>
     <main id="main2">
         <section id="contact">
@@ -56,11 +80,11 @@
             <p2>¡Lleva alegría y creatividad a tu vida con Athajhary!Contáctanos para pedidos especiales o consultas, y déjanos ayudarte a crear productos realmente únicos.</p2>
             <div class="contact-info">
                 <div class="contact-item">
-                    <img src="fondos/whatsapp.png" alt="Icono de WhatsApp" class="icon">
-                    <span>+58-424-1780517</span>
+                    <img src="fondos/whatsapp.png" alt="" class="icon">
+                    <a href="https://wa.me/584241780517?text=Hola%20,%20me%20interesa%20tu%20producto" target="_blank">+58-424-1780517</a>
                 </div>
                 <div class="contact-item">
-                    <img src="fondos/instagram.png" alt="Icono de Instagram" class="icon">
+                    <img src="fondos/instagram.png" alt="" class="icon">
                     <a href="https://instagram.com/athajhary" target="_blank">@Athajhary</a>
                 </div>
             </div>
@@ -71,22 +95,4 @@
         <p3>&copy; 2025 ATHAJHARY. Todos los derechos reservados.</p3>
     </footer>
 </body>
-<script>
-    // Selecciona todas las secciones que quieres animar
-    const sections = document.querySelectorAll('header, main, section');
-
-    // Configura el Intersection Observer
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate'); // Agrega la clase de animación
-            }
-        });
-    }, { threshold: 0.2 }); // Se activa cuando el 20% de la sección es visible
-
-    // Observa cada sección
-    sections.forEach(section => observer.observe(section));
-</script>
-
 </html>
-

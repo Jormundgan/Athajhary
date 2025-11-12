@@ -19,11 +19,10 @@ img {
 
 header {
     position: relative;
-    background-color: #03fad1;
     height: 710px;
     color: rgb(5, 98, 185);
     padding: 20px 0;
-    background-image: url('fondos/101+\ Mar\ Wallpapers\ _\ Free\ download\ _\ Best\ Collection\ \(2\).jpeg');
+    background-image: url('fondos/2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +31,33 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* Estilos de Navegación */
+nav {
+    position: fixed; /* Posiciona el nav en la parte superior del header */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    display: flex; /* Usa Flexbox para organizar los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    padding: 10px 0; /* Espaciado interno */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+nav a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    font-size: 1.2em; /* Tamaño de fuente ligeramente más grande */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+nav a:hover {
+    color: #03fad1; /* Cambia el color al pasar el cursor */
 }
 
 .logo-container {
@@ -55,13 +81,12 @@ h1 {
 .slogan {
     font-style: italic;
     margin-top: 0;
-    width: 100%;
 }
 
 #main1 {
     height: auto;
     padding: 20px;
-    background-image: url('fondos/fondo3.jpeg'); /* <--- RUTA A TU IMAGEN */
+    background-image: url('fondos/1.jpg'); /* <--- RUTA A TU IMAGEN */
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
     background-position: center;        /* Centra la imagen de fondo */
     background-repeat: no-repeat; 
@@ -76,8 +101,8 @@ section {
 }
 
 h2 {
-    color: #ffffff; /* Tono de verde medio */
-    border-bottom: 2px solid #ffffff;
+    color: #000000; /* Tono de verde medio */
+    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -89,7 +114,6 @@ h2 {
     justify-content: center; /* Centra los elementos horizontalmente */
     gap: 20px; /* Espaciado entre los elementos */
     max-width: 100%; /* Asegúrate de que no exceda el ancho del contenedor */
-    max-heigth: 100%;
     padding: 10px; /* Espaciado interno */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
@@ -177,7 +201,7 @@ h2 {
 }
 
 .contact-item a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -196,11 +220,11 @@ p {
     color: #01417c; /* Tono de verde medio */
     padding-bottom: 10px;
     margin-bottom: 20px;
-    width: 50%px;
+    width: 50%;
 }
 
 p2 {
-    color: #ffffff; /* Tono de verde medio */
+    color: #000000; /* Tono de verde medio */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -213,29 +237,12 @@ p3 {
 }
 
 span {
-    color: #ffffff; /* Tono de verde medio */
-}
-/* Animación de entrada */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Clase para aplicar la animación */
-.animate {
-    opacity: 0; /* Oculta el elemento inicialmente */
-    animation: fadeInUp 1s ease forwards; /* Aplica la animación */
+    color: #000000; /* Tono de verde medio */
 }
 
 #main2 {
     height: 680px;
-    background-image: url('fondos/fondo2.jpeg'); /* Ruta de la imagen */
+    background-image: url('fondos/3.jpg'); /* Ruta de la imagen */
     background-size: cover;                  /* Hace que la imagen cubra todo el fondo */
     background-position: center;            /* Centra la imagen */
     background-repeat: no-repeat;           /* Evita que la imagen se repita */
@@ -255,37 +262,12 @@ footer {
     margin-top: 0;
 }
 
-/* Estilos de Navegación */
-nav {
-    position: fixed; /* Posiciona el nav en la parte superior del header */
-    top: 0; /* Asegura que esté en la parte superior */
-    left: 0;
-    width: 100%; /* Ocupa todo el ancho */
-    display: flex; /* Usa Flexbox para organizar los enlaces */
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    align-items: center; /* Centra los enlaces verticalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
-    padding: 10px 0; /* Espaciado interno */
-    z-index: 10; /* Asegura que esté por encima de otros elementos */
-}
-
-nav a {
-    color: #ffffff; /* Color blanco para los enlaces */
-    text-decoration: none; /* Quita el subrayado */
-    margin: 0 15px; /* Espaciado entre los enlaces */
-    font-size: 1.2em; /* Tamaño de fuente ligeramente más grande */
-    font-weight: bold; /* Hace que el texto sea más grueso */
-    transition: color 0.3s ease; /* Transición suave para el color */
-}
-
-nav a:hover {
-    color: #03fad1; /* Cambia el color al pasar el cursor */
-}
-
+/* Ajustes para pantallas medianas (tablets) */
 @media (max-width: 768px) {
     .design-card {
-        width: calc(50% - 20px); /* En pantallas medianas, cada tarjeta ocupará la mitad del ancho */
+        width: calc(50% - 20px); /* Cada tarjeta ocupará la mitad del ancho */
     }
+
     .slogan {
         font-size: 1em; /* Reduce el tamaño del texto */
     }
@@ -295,9 +277,10 @@ nav a:hover {
     }
 }
 
+/* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
     .design-card {
-        width: 100%; /* En pantallas pequeñas, cada tarjeta ocupará el ancho completo */
+        width: 100%; /* Cada tarjeta ocupará el ancho completo */
     }
 
     .main-logo {
@@ -322,15 +305,8 @@ nav a:hover {
 #main3 {
     height: auto;
     padding: 20px;
-    background-image: url('fondos/fondo3.jpeg'); /* <--- RUTA A TU IMAGEN */
+    background-image: url('fondos/1.jpg'); /* <--- RUTA A TU IMAGEN */
     background-size: cover;             /* Hace que la imagen cubra todo el header sin distorsionarse */
     background-position: center;        /* Centra la imagen de fondo */
     background-repeat: no-repeat; 
-
 }
-
-
-
-
-
-
