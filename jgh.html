@@ -2,129 +2,306 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATHAJHARY - JGH</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilos específicos para esta página si es necesario */
-        .category-content {
-            padding: 40px;
-        }
-    </style>
+    <title>Dr. Jose Gregorio Hernandez</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">
-        <div class="logo-container">
-            <img src="fondos/athajhary.png"class="main-logo">
-            <h1>ATHAJHARY</h1>
+
+    <header class="header">
+
+        <div class="menu container">
+            <input type="checkbox" class="menu-icono" alt="menu-checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            <a href="#" id="completar-pedido" class="btn-2">Completar Pedido</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p class="slogan">Aquí encontrarás toda nuestra colección de diseños para celebrar la santificasion del Dr. Jose Gregorio Hernandez.</p>
-        <nav>
-            <a href="index.html">Volver a la Página Principal</a>
-            <a href="#header">Inicio</a>
-            <a href="#main3">Diseños de JGH</a>
-        </nav>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="fondos/logo.png" alt="">
+            </div>
+            <div class="header-txt">
+                <p>Convertimos tus ideas en productos únicos.</p>
+            </div>
+        </div>
+
     </header>
 
-    <main id="main3">        
-        <h1>Diseños jgh</h1>
-        <section class="category-content">            
+    <main class="products container" id="lista-1">
 
-        <div class="gallery">
-            <a class="design-card1">
-                <img src="jgh/1.jpeg">
-                <div class="card-title">$10</div>
-            </a>
-            <a class="design-card1">
-                <img src="jgh/2.jpeg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/3.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/4.jpg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/5.jpeg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/6.jpg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/7.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/8.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/9.jpeg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/10.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/11.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/12.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/13.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/14.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/15.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/16.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/17.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/18.jpeg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/19.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/20.jpeg">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/21.png">
-                <div class="card-title">$10</div>
-            </a>            
-            <a class="design-card1">
-                <img src="jgh/22.png">
-                <div class="card-title">$10</div>
-            </a>
+        <h2>Diseños</h2>
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="jgh/1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg1">Ver</a>
+                </div>
             </div>
-        </section>
+            <div class="product">
+                <img src="jgh/2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg2">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/3.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg3">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg5">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/6.jpg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg6">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/7.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg7">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/8.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg8">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/9.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg9">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/10.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg10">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/11.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg11">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/12.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg12">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/13.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg13">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/14.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg14">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/15.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg15">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/16.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg16">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/17.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg17">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/18.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg18">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/19.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg19">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/20.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg20">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/21.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg21">Ver</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="jgh/22.png" alt="">
+                <div class="product-txt">
+                    <h3>elisyum</h3>
+                    <p class="precio"></p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="jg22">Ver</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p3>&copy; 2025 ATHAJHARY. Todos los derechos reservados.</p3>
+    <footer class="footer" id="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="https://instagram.com/athajhary">@ATHAJHARY</a></li>
+                    <li><a href="https://wa.me/584241780517?text=Hola%20,%20me%20interesa%20tu%20producto">+WHATSAPP</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="#servicio">DISEÑOS PERSONALIZADOS</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Diseños</h3>
+                <ul>
+                    <li><a href="#diseño">DISEÑOS PREDISEÑADOS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
     </footer>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-container">
+                <button class="nav-arrow prev-btn">&lt;</button>
+            
+                <div class="product-details">
+                    <div class="product-image-area">
+                        <img id="modal-product-img" src="" alt="Producto Agrandado">
+                    </div>
+                
+                    <div class="product-info-area">
+                        <h3 id="modal-product-title">Nombre del Diseño</h3>
+                      
+                        <div class="options-group">
+                            <label for="tipo-camisa">Tipo de Camisa:</label>
+                            <select id="tipo-camisa">
+                                <option value="Micro-Durazno" data-price-modifier="0">$10.00 - Micro-Durazno</option>
+                                <option value="Algodon" data-price-modifier="2">$12.00 - Algodon</option>
+                            </select>
+                        </div>
+    
+                        <p class="current-price">Precio: <span id="modal-product-price">$10.00</span></p>
+    
+                        <div class="quantity-group">
+                            <label for="product-quantity">Cantidad:</label>
+                            <input type="number" id="product-quantity" value="1" min="1">
+                        </div>
+                    
+                        <button id="add-to-cart-modal" class="btn-1">agregar al carrito</button>
+                        <input type="hidden" id="modal-product-id" value="">
+                    </div>
+                </div>
+
+                <button class="nav-arrow next-btn">&gt;</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scrip.js"></script>
 </body>
 </html>
