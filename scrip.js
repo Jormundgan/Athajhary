@@ -213,31 +213,52 @@ function procesarPedido(elementoNuevo) {
     leerLocalStorage(); 
 }
 
-function limpiarCarritoHTML() {
-    if (lista) {
-        while(lista.firstChild) {
-            lista.removeChild(lista.firstChild);
-        }
-    }
-}
+// scrip.js - Función corregida para insertar elementos en el carrito de forma segura.
 
 function insertarCarrito(elemento) {
+    // 1. Crear la fila (<tr>)
     const row = document.createElement('tr');
-    row.innerHTML = `
-        <td>
-            <img src="${elemento.imagen}" width=50/>
-            <p>${elemento.tipo}</p> 
-        </td>
-        <td>
-            ${elemento.precio}
-        </td>
-        <td>
-            ${elemento.cantidad}
-        </td>
-        <td>
-            <a href="#" class="borrar" data-id="${elemento.id}">X </a>
-        </td>
-    `;
+
+    // --- Columna de Producto (Imagen y Tipo) ---
+    const tdImg = document.createElement('td');
+    
+    // a. Imagen
+    const img = document.createElement('img');
+    img.src = elemento.imagen;
+    img.width = 50;
+    tdImg.appendChild(img);
+    
+    // b. Tipo de Camisa (Usamos textContent para la seguridad clave)
+    const pTipo = document.createElement('p');
+    pTipo.textContent = elemento.tipo; // <-- ¡SEGURIDAD APLICADA AQUÍ!
+    tdImg.appendChild(pTipo);
+
+    // --- Columna de Precio ---
+    const tdPrecio = document.createElement('td');
+    tdPrecio.textContent = elemento.precio; // <-- ¡SEGURIDAD APLICADA AQUÍ!
+
+    // --- Columna de Cantidad ---
+    const tdCantidad = document.createElement('td');
+    tdCantidad.textContent = elemento.cantidad; // <-- ¡SEGURIDAD APLICADA AQUÍ!
+
+    // --- Columna de Botón Eliminar ---
+    const tdBorrar = document.createElement('td');
+    
+    // Creamos el enlace "X"
+    const aBorrar = document.createElement('a');
+    aBorrar.href = "#";
+    aBorrar.className = "borrar";
+    aBorrar.setAttribute('data-id', elemento.id);
+    aBorrar.textContent = "X "; // El texto literal "X "
+    tdBorrar.appendChild(aBorrar);
+
+    // 2. Añadir las columnas a la fila
+    row.appendChild(tdImg);
+    row.appendChild(tdPrecio);
+    row.appendChild(tdCantidad);
+    row.appendChild(tdBorrar);
+
+    // 3. Insertar la fila en el cuerpo de la tabla
     if (lista) {
         lista.appendChild(row);
     }
