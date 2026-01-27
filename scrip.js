@@ -143,7 +143,7 @@ function actualizarPrecioModal() {
     // Asumiendo que el precio base (Standard) siempre es $10.00 (el valor inicial en el HTML)
     const basePrice = 20; 
 
-    const newPrice = basePrice
+    const newPrice = 20;
     
     if (modalPriceSpan) {
         modalPriceSpan.textContent = `$${newPrice}`;
