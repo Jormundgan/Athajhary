@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', cargarEventListeners);
 
 function cargarEventListeners() {
     // Definimos las constantes cruciales *dentro* de la función para garantizar que existen.
+    const lista = document.querySelector('#lista-carrito tbody');
     const carrito = document.getElementById('carrito');
     const elementos1 = document.getElementById('lista-1');
     const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
@@ -277,9 +278,13 @@ function eliminarElemento(e) {
 
 function vaciarCarrito(e) {
     e.preventDefault();
+    // 1. Borramos los datos
+    localStorage.clear(); 
+    // 2. Borramos la vista
     limpiarCarritoHTML();
-    vaciarLocalStorage();
+    console.log("Carrito vaciado"); // Para que confirmes en la consola
 }
+
 
 function obtenerElementosLocalStorage() {
     let elementosLS;
