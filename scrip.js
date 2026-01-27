@@ -111,7 +111,8 @@ function cargarDatosModal(elemento) {
     const imagenSrc = elemento.querySelector('img').src;
     const titulo = elemento.querySelector('h3').textContent;
     const id = elemento.querySelector('a').getAttribute('data-id');
-    const precioBase = elemento.querySelector('.precio').textContent; 
+    const precioBase = elemento.querySelector('.precio').textContent || "$20.00";
+
 
     // 1. Llenar los campos de la modal
     if (modalProductImg) {
