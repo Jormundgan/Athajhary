@@ -141,9 +141,7 @@ function actualizarPrecioModal() {
     const modifier = parseFloat(selectedOption.getAttribute('data-price-modifier'));
     
     // Asumiendo que el precio base (Standard) siempre es $10.00 (el valor inicial en el HTML)
-    const basePrice = 10; 
-    
-    const newPrice = (basePrice + modifier).toFixed(2);
+    const basePrice = 20; 
     
     if (modalPriceSpan) {
         modalPriceSpan.textContent = `$${newPrice}`;
