@@ -355,3 +355,10 @@ function enviarPedidoWhatsApp(e) {
     // Abrir el enlace en una nueva pestaña/ventana
     window.open(whatsappURL, '_blank');
 }
+
+function limpiarCarritoHTML() {
+    // Mientras haya un hijo en el tbody (lista), lo elimina
+    while(lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+}
